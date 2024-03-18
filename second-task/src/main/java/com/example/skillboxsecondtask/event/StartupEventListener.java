@@ -10,6 +10,7 @@ import org.springframework.context.event.EventListener;
 import org.springframework.stereotype.Component;
 
 @Component
+// активируется при true в файле свойств
 @ConditionalOnProperty(name = "app.create-students-on-startup", havingValue = "true")
 @RequiredArgsConstructor
 public class StartupEventListener {
@@ -29,5 +30,4 @@ public class StartupEventListener {
                 .age(17)
                 .build());
     }
-
 }

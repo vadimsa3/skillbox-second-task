@@ -3,6 +3,7 @@ package com.example.skillboxsecondtask.event;
 import org.springframework.context.ApplicationEvent;
 
 public class StudentDeletedEvent extends ApplicationEvent {
+
     private final Long id;
 
     public StudentDeletedEvent(Object source, Long id) {

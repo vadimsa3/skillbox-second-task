@@ -15,7 +15,7 @@ import java.util.List;
 public class StudentService {
 
     private final StudentRepository studentRepository;
-    private final ApplicationEventPublisher eventPublisher;
+    private final ApplicationEventPublisher eventPublisher; // бин, отвечающий за обработку событий
 
     public void addStudent(Student student) {
         studentRepository.addStudent(student);
@@ -34,5 +34,4 @@ public class StudentService {
     public void clearStudents() {
         studentRepository.clearStudents();
     }
-
 }

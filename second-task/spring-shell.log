@@ -10,3 +10,59 @@
 1688323700705:view-students
 1688323708603:clear-students
 1688323713465:view-students
+1710319000406:getAllStudents
+1710319017411:View all students
+1710319079442:view
+1710319232884:exit
+1710334618907:Add a new student
+1710334637943:View all students
+1710334644947:-- View all students
+1710334655954:-View all students
+1710334659958:- View all students
+1710334663957:--View all students
+1710334856105:"View all students"
+1710334950167:viewStudents
+1710335030237:help
+1710335059257:view-students
+1710335158315:add-student
+1710335220352:add-student firstName=hhh lastName=gfggf age=1
+1710335330399:add-student hhh gfggf 1
+1710335339403:view-students
+1710335352412:delete-student 3
+1710335358413:view-students
+1710335369419:clear-students
+1710335374422:view-students
+1710335379425:exit
+1710749926791:add
+1710749938799:add-student
+1710750011851:add-student firstName=Denisov lastName=Denis age=19
+1710750080034:add-student firstName="Denisov" lastName="Denis" age=19
+1710750091042:add-student firstName=Denisov lastName=Denis age="19"
+1710750374261:add-student --firstName Denisov --lastName Denis --age 19
+1710750408276:studentel
+1710750423286:dell-student --1
+1710750439295:del-student --id 1
+1710750449299:del-student 1
+1710750472314:delete-student 1
+1710750838564:get-students
+1710750849570:get-All-Students
+1710750942630:get-all-sudents
+1710750975651:tudentsll-all-sudents
+1710750975654:all-sudents
+1710751133783:get-students
+1710751148791:get-all-students
+1710751154795:get-all
+1710751171803:getAllStudents
+1710751387961:exit
+1710751541144:help
+1710751639186:view-students
+1710751655194:clear-students
+1710751660196:iew-students
+1710751665200:view-students
+1710753413378:clear
+1710753427380:view
+1710755234079:help
+1710755313106:add-student Vasechkin Vasiya 15
+1710755329111:view-students
+1710755467200:delete-student 2
+1710755473205:view-students
