@@ -3,6 +3,7 @@ package com.example.skillboxsecondtask.shell;
 import com.example.skillboxsecondtask.model.Student;
 import com.example.skillboxsecondtask.service.StudentService;
 import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 import org.springframework.shell.standard.ShellComponent;
 import org.springframework.shell.standard.ShellMethod;
 import org.springframework.shell.standard.ShellOption;
@@ -11,6 +12,7 @@ import java.util.List;
 
 @ShellComponent
 @RequiredArgsConstructor
+@Slf4j
 public class StudentCommands {
     private final StudentService studentService;
 
@@ -32,7 +34,7 @@ public class StudentCommands {
     public void viewStudents() {
         List<Student> students = studentService.getAllStudents();
         for (Student student : students) {
-            System.out.println(student);
+            log.info(String.valueOf(student));
         }
     }
 
