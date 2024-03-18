@@ -17,6 +17,7 @@ public class StartupEventListener {
 
     private final StudentService studentService;
 
+    // аннотация запуска метода при обработке событий - в данном случае при запуске приложения
     @EventListener(ApplicationStartedEvent.class)
     public void createStudents() {
         studentService.addStudent(Student.builder()
