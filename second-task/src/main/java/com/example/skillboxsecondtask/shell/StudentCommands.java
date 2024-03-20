@@ -42,4 +42,9 @@ public class StudentCommands {
     public void clearStudents() {
         studentService.clearStudents();
     }
+
+    @ShellMethod("Get a student")
+    public void getStudent(@ShellOption Long id) {
+        log.info(String.valueOf(studentService.getOneStudent(id)));
+    }
 }

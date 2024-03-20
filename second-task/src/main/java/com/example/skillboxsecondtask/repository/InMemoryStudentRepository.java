@@ -38,4 +38,8 @@ public class InMemoryStudentRepository implements StudentRepository {
         students.clear();
     }
 
+    @Override
+    public Student getStudentById(Long id) {
+        return students.get(id);
+    }
 }

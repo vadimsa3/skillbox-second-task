@@ -36,4 +36,8 @@ public class StudentService {
         studentRepository.clearStudents();
         eventPublisher.publishEvent(new StudentAllCleanedEvent(this));
     }
+
+    public Student getOneStudent(Long id) {
+        return studentRepository.getStudentById(id);
+    }
 }

@@ -5,6 +5,7 @@ import com.example.skillboxsecondtask.model.Student;
 import java.util.List;
 
 public interface StudentRepository {
+
     void addStudent(Student student);
 
     void deleteStudent(Long id);
@@ -13,4 +14,5 @@ public interface StudentRepository {
 
     void clearStudents();
 
+    Student getStudentById(Long id);
 }

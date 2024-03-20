@@ -42,6 +42,10 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
    _(пример: shell:>shell:>delete-student 1,_
    результат: _Student deleted: 1)_
 
+   * команда _get-student_ - получение студента из списка по его id  
+     _(пример: shell:>get-student 2,
+     результат: _Student 2 - Petrov Andrey, age: 17)__
+
    * команда _add-student_ - добавление в список нового студента  
      _(пример: shell:>add-student Ivanov Ivan 25,
    результат: _Student added: Student 3 - Ivan Ivanov, age: 25)__
