@@ -31,12 +31,11 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
 * При старте приложения будут созданы два студента и помещены в список.
   Отключатить эту функцию возможно в application.properties, изменив статус _true_ на _false_.
   ![Изображение](https://github.com/vadimsa3/skillbox-second-task/tree/master/second-task/src/main/resources/start_create.jpg "Создание студентов по умолчанию")
-  ![Изображение](D:\SAVCHUK\SKILLBOX\SpringFramework\second-task\src\main\resources\start_create.jpg "Создание студентов по умолчаниюы")
 
 1. Запустите приложение посредством IntelliJ IDEA.
 2. Из командной строки, командой help можно получит перечень доступных приложению команд.
    ![Изображение](https://github.com/vadimsa3/skillbox-second-task/tree/master/second-task/src/main/resources/list_commands.jpg "Доступные команды")
-   ![Изображение](D:\SAVCHUK\SKILLBOX\SpringFramework\second-task\src\main\resources\list_commands.jpg "Доступные команды")
+
 3. Следуйте доступным командам.
 
    * команда _delete-student_ - удаление студента из перечня по его id  
