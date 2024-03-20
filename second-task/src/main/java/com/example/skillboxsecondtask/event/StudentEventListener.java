@@ -20,4 +20,9 @@ public class StudentEventListener {
     public void handleStudentDeletedEvent(StudentDeletedEvent event) {
         log.info("Student deleted: " + event.getId());
     }
+
+    @EventListener
+    public void handleStudentAllCleanedEvent(StudentAllCleanedEvent event) {
+        log.info("The list of students has been cleared");
+    }
 }

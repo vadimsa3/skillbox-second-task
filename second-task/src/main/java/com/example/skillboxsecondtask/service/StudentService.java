@@ -1,6 +1,7 @@
 package com.example.skillboxsecondtask.service;
 
 import com.example.skillboxsecondtask.event.StudentAddedEvent;
+import com.example.skillboxsecondtask.event.StudentAllCleanedEvent;
 import com.example.skillboxsecondtask.event.StudentDeletedEvent;
 import com.example.skillboxsecondtask.model.Student;
 import com.example.skillboxsecondtask.repository.StudentRepository;
@@ -33,5 +34,6 @@ public class StudentService {
 
     public void clearStudents() {
         studentRepository.clearStudents();
+        eventPublisher.publishEvent(new StudentAllCleanedEvent(this));
     }
 }

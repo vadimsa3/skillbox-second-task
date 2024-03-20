@@ -15,9 +15,9 @@
 
 **2. Клонируйте репозиторий.**  
 * Клонируйте репозиторий с кодом проекта на свой локальный компьютер:  
-git clone https://github.com/vadimsa3/skillbox-second-task
+git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-task
 
-* Проверьте установлены-ли следующие зависимости в файле _build.gradle.kts_:
+* Проверьте наличие зависимостей в файле _build.gradle.kts_:
 
     _dependencies {
     implementation("org.springframework.shell:spring-shell-starter")
@@ -25,37 +25,34 @@ git clone https://github.com/vadimsa3/skillbox-second-task
     annotationProcessor("org.projectlombok:lombok")
     }_ 
 
-**3. Настройте Ваш файл конфигурации application.yaml.**
-
-* Внесите корректировки в абсолютный путь к Вашему файлу - базе контактов (загружаемой при выборе активного профиля default-contacts.txt и contacts.txt) и базе контактов (сохраняемой при завершении работы contacts.txt):
-  пример: file-load: D:\\SAVCHUK\\SKILLBOX\\Spring\\contact-book\\src\\main\\resources\\default-contacts.txt
-* Выберите предпочтительный активный профиль:
-    - init - будут загружены контакты из default-contacts.txt (список контактов по умолчанию)
-    - read - будут загружены контакты из contacts.txt (список контактов из contacts.txt, сохраненного в предыдущем сеансе)
-    - default - профиль по умолчанию, при отсутствии явно выбранного профиля (будут загружены контакты из contacts.txt, сохраненного в предыдущем сеансе)
-
 <a name="запуск_и_работа"></a>
 ## **ЗАПУСК И РАБОТА ПРИЛОЖЕНИЯ** ##
 
-1. Запустите приложение:
-    - посредством IntelliJ IDEA
-    - запуск JAR-файла из командной строки:
-      java -jar D:\SAVCHUK\SKILLBOX\Spring\contact-book\target\contact-book-1.0-SNAPSHOT.jar - для Windows (с учетом правильного расположения файла)
+* При старте приложения будут созданы два студента и помещены в список.
+  Отключатить эту функцию возможно в application.properties, изменив статус _true_ на _false_.
+  ![Изображение](https://github.com/vadimsa3/skillbox-second-task/tree/master/second-task/src/main/resources/start_create.jpg "Создание студентов по умолчанию")
+  ![Изображение](D:\SAVCHUK\SKILLBOX\SpringFramework\second-task\src\main\resources\start_create.jpg "Создание студентов по умолчаниюы")
 
-3. Следуйте командам главного меню.
+1. Запустите приложение посредством IntelliJ IDEA.
+2. Из командной строки, командой help можно получит перечень доступных приложению команд.
+   ![Изображение](https://github.com/vadimsa3/skillbox-second-task/tree/master/second-task/src/main/resources/list_commands.jpg "Доступные команды")
+   ![Изображение](D:\SAVCHUK\SKILLBOX\SpringFramework\second-task\src\main\resources\list_commands.jpg "Доступные команды")
+3. Следуйте доступным командам.
 
-   ![Изображение](https://github.com/vadimsa3/contact-book/blob/master/src/main/resources/raw/MainMenu.jpg "Главное меню")
+   * команда _delete-student_ - удаление студента из перечня по его id
+   (пример: shell:>shell:>delete-student 1,_
+   результат: _Student deleted: 1_
 
-Перечень команд для работы с контактами:
-* 1 Получение списка контактов.
-  Будут выведены все имеющиеся контакты в формате «Ф. И. О. | Номер телефона | Адрес электронной почты».
-*   2 Добавление нового контакта в список.
-    Будет добавлен новый контакт в список контактов. Формат ввода: Ф. И. О. номер телефона адрес электронной почты.
-*   3 Удаление контакта по email.
-    Будет удален контакт из списка по введенному email.
-*   4 Поиск контакта по email.
-    Будет найден контакт из списка по введенному email.
-*  5 Выход (с сохранением изменений).
-   Будет сохранено текущее состояние списка контактов в текстовый файл и завершена работа программы.
+   * команда _add-student_ - добавление в список нового студента
+     _(пример: shell:>add-student Ivanov Ivan 25,_
+   результат: _Student added: Student 3 - Ivan Ivanov, age: 25)_
 
-![](https://img.shields.io/badge/ВНИМАНИЕ!-FF0000) ***При принудительном завершении работы программы текущее состояние списка контактов сохранено не будет.***
+   * команда _view-students_ - получение списка студентов
+     _(пример: shell:>view-students,_
+     результат: _Student 1 - Ivanov Ivan, age: 18 Student 2 - Petrov Andrey, age: 17)_
+
+   * команда _clear-students_ - очистка списка студентов
+       _(пример: shell:>clear-students,_
+       результат: _The list of students has been cleared)_
+
+   * команда _exit_ - завершение работы программы
