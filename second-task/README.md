@@ -19,10 +19,10 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
 
 * Проверьте наличие зависимостей в файле _build.gradle.kts_:
 
-    _dependencies {
-    implementation("org.springframework.shell:spring-shell-starter")
-    compileOnly("org.projectlombok:lombok")
-    annotationProcessor("org.projectlombok:lombok")
+    _dependencies {  
+    implementation("org.springframework.shell:spring-shell-starter")  
+    compileOnly("org.projectlombok:lombok")  
+    annotationProcessor("org.projectlombok:lombok")  
     }_ 
 
 <a name="запуск_и_работа"></a>
@@ -39,20 +39,20 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
    ![Изображение](D:\SAVCHUK\SKILLBOX\SpringFramework\second-task\src\main\resources\list_commands.jpg "Доступные команды")
 3. Следуйте доступным командам.
 
-   * команда _delete-student_ - удаление студента из перечня по его id
-   (пример: shell:>shell:>delete-student 1,_
-   результат: _Student deleted: 1_
+   * команда _delete-student_ - удаление студента из перечня по его id  
+   _(пример: shell:>shell:>delete-student 1,_
+   результат: _Student deleted: 1)_
 
-   * команда _add-student_ - добавление в список нового студента
-     _(пример: shell:>add-student Ivanov Ivan 25,_
-   результат: _Student added: Student 3 - Ivan Ivanov, age: 25)_
+   * команда _add-student_ - добавление в список нового студента  
+     _(пример: shell:>add-student Ivanov Ivan 25,
+   результат: _Student added: Student 3 - Ivan Ivanov, age: 25)__
 
-   * команда _view-students_ - получение списка студентов
+   * команда _view-students_ - получение списка студентов  
      _(пример: shell:>view-students,_
-     результат: _Student 1 - Ivanov Ivan, age: 18 Student 2 - Petrov Andrey, age: 17)_
+     _результат:_ _Student 1 - Ivanov Ivan, age: 18 Student 2 - Petrov Andrey, age: 17)_
 
-   * команда _clear-students_ - очистка списка студентов
+   * команда _clear-students_ - очистка списка студентов  
        _(пример: shell:>clear-students,_
-       результат: _The list of students has been cleared)_
+       _результат:_ _The list of students has been cleared)_
 
-   * команда _exit_ - завершение работы программы
+   * команда _exit_ - завершение работы программы  
