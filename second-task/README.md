@@ -59,3 +59,6 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
        _результат:_ _The list of students has been cleared)_
 
    * команда _exit_ - завершение работы программы  
+
+** Запуск приложения через Docker **
+В терминале введите: docker run -it skillbox-second-task
