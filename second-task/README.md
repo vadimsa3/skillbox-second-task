@@ -60,6 +60,7 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
 
    * команда _exit_ - завершение работы программы  
 
+  ![Изображение](https://github.com/vadimsa3/skillbox-second-task/blob/master/second-task/src/main/resources/raw/docker.png)
 **Запуск приложения через Docker**
 * Проверьте, установлен-ли у вас Docker.
   введите в терминале: docker version
