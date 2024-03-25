@@ -62,7 +62,5 @@ git clone https://github.com/vadimsa3/skillbox-second-task/tree/master/second-ta
 
   ![Изображение](https://github.com/vadimsa3/skillbox-second-task/blob/master/second-task/src/main/resources/raw/docker.png)
  **ЗАПУСК ПРИЛОЖЕНИЯ ЧЕРЕЗ DOCKER**
-* Проверьте, установлен-ли у вас Docker.
-  введите в терминале: docker version
-* Запустите образ приложения.
-  введите в терминале: docker run -it skillbox-second-task
+* Проверьте, установлен-ли у вас Docker (введите в терминале: docker version).
+* Запустите образ приложения (введите в терминале: docker run -it skillbox-second-task).
